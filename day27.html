@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Day 27 - Navbar Flexbox</title>
+  <style>
+    * { margin: 0; padding: 0;}
+    
+    /* 1. Navbar - Left me logo, Right me menu */
+    .navbar {
+      display: flex;                 /* Flex ON */
+      justify-content: space-between; /* Logo left, Menu right */
+      align-items: center;           /* Up-down beech me */
+      background:#5c006b ;
+      padding: 15px 50px;
+      color: white;
+    }
+    
+    .menu a {
+      color: white;
+      text-decoration: none;
+      margin-left: 60px;
+    }
+    
+    /* 2. Poora page beech me - Vertical + Horizontal */
+    .center-box {
+      display: flex;                 /* Flex ON */
+      justify-content: center;       /* Left-right center */
+      align-items: center;           /* Up-down center */
+      height: 84vh;                  /* Screen ki 80% height */
+      background: pink;
+    }
+    
+    .box {
+      background: red;
+      padding: 50px;
+      border-radius: 20px;
+      font-size: 30px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <h2>Rehan</h2>
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+
+  <!-- Beech wala dabba -->
+  <div class="center-box">
+    <div class="box">Main Beech Me Hu 😎</div>
+  </div>
+</body>
+</html>
