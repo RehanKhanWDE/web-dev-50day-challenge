@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 29 - Animation</title>
+<style>
+  body {
+    background: #111;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+    padding: 50px;
+  }
+
+  /* TASK 1: Hover Wala Button */
+  .btn {
+    background: dodgerblue;
+    padding: 12px 24px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: 0.5s; /* smooth change */
+    margin: 20px;
+  }
+  .btn:hover {
+    background: #ff0055;
+    transform: scale(1.1); /* thoda bada */
+  }
+
+  /* TASK 2: Saans Leta Dabba */
+  .photo {
+    width: 150px;
+    height: 150px;
+    background: red;
+    margin: 30px auto;
+    border-radius: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+    animation:breath  0.9s infinite; /* bar chalega */
+  }
+  @keyframes breath {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+
+  /* TASK 3: Left Se Entry */
+  h1 {
+    animation: entry 2s; /* 2 sec me aayega */
+  }
+  @keyframes entry {
+    0% { transform: translateX(-200px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+
+</style>
+</head>
+<body>
+
+  <h1>Day 29 Animation Practice</h1> <!-- Task 3 -->
+
+  <button class="btn">Hover Karo</button> <!-- Task 1 -->
+
+  <div class="photo">Name: REHAN</div> <!-- Task 2 -->
+
+</body>
+</html>
