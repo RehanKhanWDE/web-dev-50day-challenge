@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function showFruits()
+{
+    // NAYA: Array banana
+    var fruits = [ " Mango",   " Apple", " Chiku",         "Grapes", "Banana"];
+
+    var text = "Mere fruits ki list: <br><br>";
+
+    // for loop se array ke har item ko print karenge
+    for(var i = 0; i < 5; i++) // array 0 se shuru hota hai
+    {
+        text = text + (i+1) + ". " + fruits[i] + "<br>";
+    }
+
+    document.getElementById("list").innerHTML = text;
+}
+</script>
+</head>
+<body>
+<center>
+<h2>Day 41: Array List</h2>
+<button onclick="showFruits()">Click here for Fruits List </button>
+
+<br><br>
+<h3 id="list"></h3>
+</center>
+</body>
+</html>
