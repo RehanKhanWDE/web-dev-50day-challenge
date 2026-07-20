@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function checkResult()
+{
+    var marks = document.getElementById("marks").value; // box se number uthao
+    
+    // Check khali hai kya
+    if(marks == "")
+    {
+        document.getElementById("result").innerHTML = "Bhai marks daal pehle 😡";
+        return;
+    }
+    
+    marks = Number(marks); // text ko number banao
+    
+    // Yahi naya hai - if else
+    if(marks >= 33)  // agar 33 ya usse zyada hai
+    {
+        document.getElementById("result").innerHTML = "PASS ho gaya bhai 🎉";
+    }
+    else // warna
+    {
+        document.getElementById("result").innerHTML = "FAIL ho gaya 💀 padh le";
+    }
+}
+</script>
+</head>
+<body>
+<center>
+<h2>Day 39: Pass Fail Checker</h2>
+<input type="number" id="marks" placeholder="Apne marks daalo">
+<br><br>
+<button onclick="checkResult()">Check Kar</button>
+
+<br><br>
+<h3 id="result">Yaha result aayega</h3> 
+</center>
+</body>
+</html>
