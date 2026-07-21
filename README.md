@@ -1,3 +1,3 @@
 
 Learning HTML CSS and JavaScript 
-in 50 days 
+in 70 days 
